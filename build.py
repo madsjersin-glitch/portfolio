@@ -268,11 +268,6 @@ def work():
 <span class="label">Open to senior roles · Copenhagen</span>
 <h1>I’m a product marketer who turns customer insight into positioning, launches and onboarding.</h1>
 <p class="intro">I’ve spent 9+ years at Pleo, Veo and Reshape Biotech, including two roles as the first product marketing hire. I’m looking for a senior product marketing role in Copenhagen.</p>
-<div class="hero-actions">
-<a class="button primary" href="{f['href']}">Read a launch case study <span aria-hidden="true">→</span></a>
-<a class="button" href="mailto:{EMAIL}">Email me</a>
-<a class="button" href="{CV}" target="_blank" rel="noopener">View my CV ↗</a>
-</div>
 <ul class="stats" aria-label="The shorthand">{stats}</ul>
 </section>
 <section class="featured" aria-labelledby="featured-title">
