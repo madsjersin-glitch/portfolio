@@ -86,8 +86,8 @@ ul, ol { padding: 0; list-style: none; }
 
 /* Hero */
 .hero { display: flex; flex-direction: column; gap: 22px; padding: 72px 0 40px; }
-.hero h1 { max-width: 920px; font-family: var(--display); font-weight: 400; font-size: clamp(32px, 4.6vw, 56px); line-height: 1.08; letter-spacing: -0.015em; }
-.intro { max-width: 640px; font-family: var(--display); font-size: 19px; color: var(--deep-ink); }
+.hero h1 { font-family: var(--display); font-weight: 400; font-size: clamp(32px, 4.6vw, 56px); line-height: 1.08; letter-spacing: -0.015em; }
+.intro { max-width: 760px; font-family: var(--display); font-size: 19px; color: var(--deep-ink); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .stats { display: flex; flex-wrap: wrap; gap: 10px 32px; padding-top: 18px; border-top: 1px solid var(--lavender-soft); }
 .stats li { font-size: 15px; line-height: 1.35; color: var(--deep-ink); }
