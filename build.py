@@ -336,7 +336,8 @@ def about():
 <div class="roles">{roles}</div>
 <div class="facts">
 <div class="fact"><span class="label">Education</span><span>MSc Finance and Strategic Management, CBS · 2011 → 2014</span><span>BSc Business Administration, CBS · 2008 → 2011</span><span>Product Marketing Minidegree, CXL · 2023</span></div>
-<div class="fact"><span class="label">Toolbox</span><span>Positioning · Launches · Sales enablement · Onboarding · Video scripts · Landing pages · Press relations · HubSpot · Intercom · Figma · Lovable · Claude</span></div>
+<div class="fact"><span class="label">Skills</span><span>Positioning · Launches · Sales enablement · Onboarding · Video scripts · Landing pages · Press relations</span></div>
+<div class="fact"><span class="label">Tools</span><span>HubSpot · Intercom · Webflow · Notion · Figma · Lovable · Claude</span></div>
 </div>
 </section>"""
     return page("about", "About · Mads Jersin",
