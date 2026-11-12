@@ -195,6 +195,7 @@ def page(slug, title, desc, body):
 <a class="brand" href="{p or './'}"><span class="brand-name">Mads Jersin</span><span class="label">Product marketing</span></a>
 <nav class="nav" aria-label="Main">{links}</nav>
 <div class="header-links">
+<div class="lang" role="group" aria-label="Language"><span class="lang-on" aria-current="true">EN</span><span class="lang-off" aria-disabled="true">DA <span class="soon">Coming</span></span></div>
 <a href="{LINKEDIN}" target="_blank" rel="noopener">LinkedIn ↗</a>
 <a href="{CV}" target="_blank" rel="noopener">CV ↗</a>
 <a class="cta" href="mailto:{EMAIL}">Get in touch</a>
@@ -214,6 +215,7 @@ def page(slug, title, desc, body):
 <div class="footer-cols">
 <div><span class="label">Main</span>{foot}</div>
 <div><span class="label">Contact</span><a href="mailto:{EMAIL}">Email →</a><a href="{LINKEDIN}" target="_blank" rel="noopener">LinkedIn ↗</a><a href="{CV}" target="_blank" rel="noopener">CV ↗</a></div>
+<div><span class="label">Language</span><div class="lang" role="group" aria-label="Language"><span class="lang-on" aria-current="true">EN</span><span class="lang-off" aria-disabled="true">DA <span class="soon">Coming</span></span></div></div>
 </div>
 <div class="footer-base">
 <div><p>© 2026 Mads Jersin</p><p>Made with love (and Claude) in Copenhagen &lt;3</p></div>

@@ -74,6 +74,13 @@ ul, ol { padding: 0; list-style: none; }
 .header-links a { text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; white-space: nowrap; }
 .header-links .cta { padding: 0 16px; border: 1px solid var(--ink); border-radius: 4px; font-weight: 500; }
 
+/* Language toggle (Danish version to come) */
+.lang { display: inline-flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 13px; letter-spacing: 0.06em; }
+.lang-on { padding: 4px 8px; border: 1px solid var(--ink); border-radius: 4px; }
+.lang-off { display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; color: var(--lavender-ink); cursor: default; }
+.soon { padding: 1px 5px; border: 1px solid var(--lavender-soft); border-radius: 3px; background: var(--card); font-size: 10px; text-transform: uppercase; }
+.footer-cols .lang { flex-direction: row; align-items: center; align-self: flex-start; margin-top: 4px; }
+
 /* Buttons */
 .button, .more {
   display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 18px;
