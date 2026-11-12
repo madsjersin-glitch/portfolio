@@ -22,7 +22,7 @@ STATS = [
 
 FEATURED = dict(
     href="case-studies/#robot", image="robot-event", alt="Two hosts presenting Reshape’s live online launch event",
-    eyebrow="Reshape Biotech · Product launch", title="Launching the robot",
+    eyebrow="Reshape Biotech · Product launch", title="Launching new hardware",
     text="I led product marketing for Reshape’s launch into quality-control labs: the message, sales training, website, videos, a live launch event and four email campaigns.",
     result="In the weeks after the launch, companies that attended the event accounted for ~$0.5M in new pipeline.",
 )
@@ -75,7 +75,7 @@ BOARDS = [
 ]
 
 CASES = [
-    dict(id="robot", eyebrow="Reshape Biotech · Product launch", title="Launching the robot",
+    dict(id="robot", eyebrow="Reshape Biotech · Product launch", title="Launching new hardware",
          sub="I led product marketing for Reshape’s launch into quality-control labs.",
          facts=[("My role", "Launch positioning, communications and sales preparation"),
                 ("With", "The hardware and software teams, a co-founder, a freelance videographer and our designer"),
