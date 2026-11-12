@@ -93,4 +93,46 @@
   }
   window.addEventListener('hashchange', openFromHash);
   openFromHash();
+
+  // Unfold and fold cards smoothly; the contents rise in one after another.
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && Element.prototype.animate) {
+    var ease = 'cubic-bezier(.2, .7, .2, 1)';
+    document.querySelectorAll('details.card').forEach(function (card) {
+      var summary = card.querySelector('summary');
+      var body = card.querySelector('.card-body');
+      if (!summary || !body) return;
+      var running = null;
+
+      function finish() { body.style.overflow = ''; running = null; }
+
+      summary.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (running) running.cancel();
+        body.style.overflow = 'hidden';
+
+        if (!card.open) {
+          card.open = true;
+          var h = body.scrollHeight;
+          running = body.animate(
+            [{ height: '0px', paddingBottom: '0px', opacity: 0 }, { height: h + 'px', opacity: 1 }],
+            { duration: 420, easing: ease });
+          running.onfinish = finish;
+          running.oncancel = finish;
+          Array.prototype.forEach.call(body.children, function (child, i) {
+            child.animate(
+              [{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }],
+              { duration: 460, delay: 90 + i * 70, easing: ease, fill: 'backwards' });
+          });
+        } else {
+          var from = body.offsetHeight;
+          running = body.animate(
+            [{ height: from + 'px', opacity: 1 }, { height: '0px', paddingBottom: '0px', opacity: 0 }],
+            { duration: 260, easing: 'cubic-bezier(.4, 0, 1, 1)' });
+          running.onfinish = function () { card.open = false; finish(); };
+          running.oncancel = finish;
+        }
+      });
+    });
+  }
 })();
